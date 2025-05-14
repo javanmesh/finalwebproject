@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GeoTech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>GeoTech Solutions</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>GeoTech Solutions</p>
+                    <p>Business Park, Suite 305</p>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>Phone: +254 700 000000</p>
+                    <p>Support: +254 711 000000</p>
+                    <p>Sales: +254 722 000000</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>General: info@javangeotechsolutions.co.ke</p>
+                    <p>Support: support@javangeotechsolutions.co.ke</p>
+                    <p>Sales: sales@javangeotechsolutions.co.ke</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-map-container">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="equipment">GIS Equipment Inquiry</option>
+                                <option value="services">GIS Services Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
+                            <span class="error-message" id="consentError"></span>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Your message has been sent successfully! We'll get back to you shortly.</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <h2>Our Location</h2>
+                    <div class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8192213768124!2d36.82115961475784!3d-1.2923595359792524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d5a0c0c0c1%3A0x4f0c0c0c0c0c0c0c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <p><i class="fas fa-directions"></i> Get directions to our office</p>
+                        <p>Conveniently located in the heart of Nairobi's business district.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Do you offer equipment rentals?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, we offer flexible rental options for most of our GIS equipment, including GPS units, drones, and surveying tools. Rental periods range from daily to monthly with competitive rates.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>What areas do your services cover?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Our services are available throughout Kenya and other East African countries, including Uganda, Tanzania, Rwanda, and Ethiopia. For locations outside these regions, please contact us to discuss your specific needs.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Do you provide training for purchased equipment?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, we offer comprehensive training for all equipment purchased from us. This includes basic operation, maintenance, and software usage. Advanced training packages are also available at additional cost.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We accept various payment methods including bank transfers, mobile money (M-Pesa), credit/debit cards, and approved purchase orders for government and corporate clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Need Specialized GIS Solutions?</h2>
+            <p>Our team is ready to provide expert assistance for your unique geospatial needs.</p>
+            <a href="tel:+254700000000" class="btn"><i class="fas fa-phone"></i> Call Us Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GeoTech Solutions</h3>
+                <p>Providing premium GIS equipment and services to professionals across East Africa.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 700 000000</p>
+                <p><i class="fas fa-envelope"></i> info@javangeotechsolutions.co.ke</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GeoTech Solutions. All rights reserved. | Designed by Javan Meshack</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

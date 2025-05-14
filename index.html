@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoTech Solutions | GIS Equipment & Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>GeoTech Solutions</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Advanced GIS Solutions for Modern Mapping</h1>
+            <p>Premium equipment and expert services for geospatial professionals</p>
+            <a href="#featured-products" class="btn">Explore Products</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-satellite"></i>
+            <h3>High-Precision Equipment</h3>
+            <p>State-of-the-art GPS, drones, and surveying tools</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>GIS Software</h3>
+            <p>Industry-leading mapping and spatial analysis solutions</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-user-tie"></i>
+            <h3>Expert Consultation</h3>
+            <p>Professional guidance for your geospatial projects</p>
+        </div>
+    </section>
+
+    <section id="featured-products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product-gps.jpg" alt="High-Precision GPS">
+                </div>
+                <div class="product-info">
+                    <h3>High-Precision GPS Units</h3>
+                    <p>Centimeter-level accuracy for professional surveying</p>
+                    <span class="price">From KSh 125,000</span>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product-drone.jpg" alt="Survey Drones">
+                </div>
+                <div class="product-info">
+                    <h3>Survey Drones</h3>
+                    <p>Aerial mapping and photogrammetry solutions</p>
+                    <span class="price">From KSh 250,000</span>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="product-software.jpg" alt="GIS Software">
+                </div>
+                <div class="product-info">
+                    <h3>GIS Software Packages</h3>
+                    <p>Complete software solutions for spatial analysis</p>
+                    <span class="price">From KSh 75,000</span>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Land Surveying</h3>
+                <p>Precision mapping and boundary determination services</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-database"></i>
+                <h3>Spatial Data Analysis</h3>
+                <p>Expert interpretation and analysis of geospatial information</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>GIS Training</h3>
+                <p>Customized training for individuals and organizations</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Equipment Maintenance</h3>
+                <p>Professional service and calibration for GIS equipment</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Elevate Your Geospatial Capabilities?</h2>
+            <p>Contact us today to discuss your GIS equipment needs and service requirements.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <p>"GeoTech Solutions provided us with top-quality equipment that significantly improved our surveying efficiency."</p>
+                <div class="client">
+                    <h4>Kenya Urban Roads Authority</h4>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"The GIS training we received was excellent. Our team now has the skills to handle complex spatial analysis projects."</p>
+                <div class="client">
+                    <h4>Nairobi County Government</h4>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Their technical support is outstanding. Any issues with our equipment are resolved quickly and professionally."</p>
+                <div class="client">
+                    <h4>Environmental Research Firm</h4>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <span class="dot active" onclick="currentTestimonial(0)"></span>
+            <span class="dot" onclick="currentTestimonial(1)"></span>
+            <span class="dot" onclick="currentTestimonial(2)"></span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GeoTech Solutions</h3>
+                <p>Providing premium GIS equipment and services to professionals across East Africa.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 700 000000</p>
+                <p><i class="fas fa-envelope"></i> info@javangeotechsolutions.co.ke</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GeoTech Solutions. All rights reserved. | Designed by Javan Meshack</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
